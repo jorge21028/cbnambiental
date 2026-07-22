@@ -1,0 +1,53 @@
+# Información Institucional
+title: "CBN Ambiental Consulting"
+email: "contacto@cbnambiental.com"
+description: "Consultora internacional en ingeniería ambiental, gestión de recursos hídricos, estudios de impacto y desarrollo sostenible."
+baseurl: ""
+url: "https://cbnambiental.github.io"
+lang: "es"
+
+# Autoría y Redes Sociales
+twitter_username: cbnambiental
+github_username: cbnambiental
+social:
+  linkedin: "https://linkedin.com/company/cbnambiental"
+  researchgate: "https://researchgate.net/institution/cbnambiental"
+
+# Colecciones Dinámicas
+collections:
+  services:
+    output: true
+    permalink: /servicios/:path/
+  projects:
+    output: true
+    permalink: /proyectos/:path/
+  researchers:
+    output: true
+    permalink: /investigadores/:path/
+  team:
+    output: true
+    permalink: /equipo/:path/
+  publications:
+    output: true
+    permalink: /publicaciones/:path/
+  conferences:
+    output: true
+    permalink: /conferencias/:path/
+  experiences:
+    output: true
+    permalink: /experiencias/:path/
+
+# Configuración de Build
+markdown: kramdown
+theme: null # Custom CSS/SASS architecture
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclusiones
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
