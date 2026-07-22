@@ -9,8 +9,8 @@ description: >-
   Consultora ambiental especializada en monitoreo de calidad de agua,
   estudios ambientales, gestión de autorizaciones, diseño y construcción
   de sistemas de tratamiento, auditorías, capacitación e investigación.
-url: "https://cbnambiental.github.io"   # Cambiar por el dominio real
-baseurl: ""                             # Cambiar a "/nombre-repo" si se usa Project Page en GitHub Pages
+url: "https://jorge21028.github.io"   # Cambiar por el dominio real
+baseurl: "/cbn-ambiental"                             # Cambiar a "/nombre-repo" si se usa Project Page en GitHub Pages
 lang: es
 
 # --------------------------------------------------------------------------
