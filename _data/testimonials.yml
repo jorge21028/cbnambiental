@@ -1,9 +1,9 @@
-- name: "Grupo Industrial del Caribe"
+- name: "Plan Yaque"
   role: "Gerencia de Sostenibilidad"
   quote: >-
     El equipo de CBN Ambiental Consulting acompañó todo nuestro proceso de
     autorización ambiental con rigor técnico y tiempos de respuesta excelentes.
-  avatar: "/assets/images/testimonials/cliente-1.jpg"
+  avatar: "https://www.planyaque.org/wp-content/uploads/2016/07/Plan_Yaque_Logo.jpg"
 - name: "Cooperativa Agua Limpia"
   role: "Dirección Ejecutiva"
   quote: >-
