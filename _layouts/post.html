@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section class="page-hero" data-animate>
+  <div class="container" style="max-width:760px;">
+    {% include breadcrumbs.html trail="Blog|/blog/" current=page.title %}
+    <h1>{{ page.title }}</h1>
+    <p>Por {{ page.author | default: site.title }} · {{ page.date | date: "%d de %B, %Y" }} · {{ content | strip_html | number_of_words | divided_by: 200 | at_least: 1 }} min de lectura</p>
+    <div class="tag-list">
+      {% for cat in page.categories %}<span class="tag">{{ cat }}</span>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:760px;">
+    {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="border-radius:12px;margin-bottom:2rem;" loading="lazy">{% endif %}
+
+    {% if page.toc %}
+      <div class="toc">
+        <h4>Contenido del artículo</h4>
+        <ul>{% for t in page.toc %}<li><a href="#{{ t | slugify }}">{{ t }}</a></li>{% endfor %}</ul>
+      </div>
+    {% endif %}
+
+    <article>{{ content }}</article>
+
+    {% if page.tags %}
+      <div class="tag-list" style="margin-top:2rem;">
+        {% for tag in page.tags %}<span class="tag">#{{ tag }}</span>{% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section" style="background:var(--color-surface);">
+  <div class="container">
+    <div class="section-header"><h2>Artículos relacionados</h2></div>
+    <div class="grid cols-3">
+      {% assign related = site.posts | where_exp: "p", "p.url != page.url" | limit: 3 %}
+      {% for post in related %}{% include card-post.html item=post %}{% endfor %}
+    </div>
+  </div>
+</section>

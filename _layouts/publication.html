@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html trail="Publicaciones|/publicaciones/" current=page.title %}
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.authors | join: ", " }} · {{ page.journal }} ({{ page.year }})</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:820px;">
+    <h2>Resumen</h2>
+    {{ content }}
+
+    <div class="card" style="padding:1.5rem; margin-top:2rem;">
+      <p><strong>DOI:</strong> {% if page.doi %}<a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener">{{ page.doi }}</a>{% else %}No disponible{% endif %}</p>
+      <p><strong>Revista:</strong> {{ page.journal }}</p>
+      <p><strong>Año:</strong> {{ page.year }}</p>
+      <p><strong>Citas:</strong> {{ page.citations | default: 0 }}</p>
+      <div style="display:flex; gap:1rem; margin-top:1rem;">
+        {% if page.pdf %}<a href="{{ page.pdf | relative_url }}" class="btn btn-secondary btn-sm" target="_blank">Descargar PDF</a>{% endif %}
+        {% if page.external_link %}<a href="{{ page.external_link }}" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Enlace externo</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,137 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('{{ site.data.settings.hero.image | relative_url }}');"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <span class="hero-eyebrow">Consultoría e ingeniería ambiental</span>
+    <h1 data-animate>{{ site.data.settings.hero.headline }}</h1>
+    <p data-animate>{{ site.data.settings.hero.subheadline }}</p>
+    <div class="hero-actions" data-animate>
+      <a href="{{ site.data.settings.hero.cta_primary_url | relative_url }}" class="btn btn-primary">{{ site.data.settings.hero.cta_primary_text }}</a>
+      <a href="{{ site.data.settings.hero.cta_secondary_url | relative_url }}" class="btn btn-outline-light">{{ site.data.settings.hero.cta_secondary_text }}</a>
+    </div>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+  </div>
+</section>
+
+<!-- Resumen de la empresa -->
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2" style="align-items:center;">
+      <div data-animate>
+        <span class="eyebrow">Sobre CBN Ambiental Consulting</span>
+        <h2>Ciencia, ingeniería y compromiso ambiental</h2>
+        <p>Somos una consultora especializada en soluciones ambientales integrales: desde el monitoreo de calidad de agua hasta el diseño y construcción de sistemas de tratamiento. Combinamos rigor técnico con un enfoque práctico para ayudar a nuestros clientes a cumplir sus objetivos de sostenibilidad.</p>
+        <a href="{{ '/nosotros/' | relative_url }}" class="btn btn-secondary">Conoce nuestra historia</a>
+      </div>
+      <img data-animate src="{{ '/assets/images/about/equipo-campo.jpg' | relative_url }}" alt="Equipo de CBN Ambiental Consulting en campo" loading="lazy" style="border-radius:16px;">
+    </div>
+  </div>
+</section>
+
+<!-- Servicios principales -->
+<section class="section" style="background: var(--color-surface);">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="eyebrow">Lo que hacemos</span>
+      <h2>Servicios ambientales integrales</h2>
+      <p>Acompañamos cada etapa de tu proyecto, desde el diagnóstico hasta la implementación y el seguimiento.</p>
+    </div>
+    <div class="grid cols-3">
+      {% assign featured_services = site.services | limit: 6 %}
+      {% for s in featured_services %}
+        {% include card-service.html item=s %}
+      {% endfor %}
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="{{ '/servicios/' | relative_url }}" class="btn btn-primary">Ver todos los servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- Proyectos destacados -->
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="eyebrow">Nuestro trabajo</span>
+      <h2>Proyectos destacados</h2>
+    </div>
+    <div class="grid cols-3">
+      {% assign featured_projects = site.projects | limit: 3 %}
+      {% for p in featured_projects %}
+        {% include card-project.html item=p %}
+      {% endfor %}
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="{{ '/proyectos/' | relative_url }}" class="btn btn-secondary">Ver todos los proyectos</a>
+    </div>
+  </div>
+</section>
+
+<!-- Investigadores destacados -->
+<section class="section" style="background: var(--color-surface);">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="eyebrow">Talento científico</span>
+      <h2>Investigadores destacados</h2>
+    </div>
+    <div class="grid cols-3">
+      {% assign featured_researchers = site.researchers | limit: 3 %}
+      {% for r in featured_researchers %}
+        {% include card-researcher.html item=r %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Últimas publicaciones del blog -->
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="eyebrow">Blog</span>
+      <h2>Últimas publicaciones</h2>
+    </div>
+    <div class="grid cols-3">
+      {% assign latest_posts = site.posts | limit: 3 %}
+      {% for post in latest_posts %}
+        {% include card-post.html item=post %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Estadísticas -->
+{% include stats.html %}
+
+<!-- Clientes -->
+{% include clients.html %}
+
+<!-- Testimonios -->
+{% include testimonials.html %}
+
+<!-- Llamada a la acción -->
+<div style="margin: 2rem 0;">
+  {% include cta.html %}
+</div>
+
+<!-- Mapa y contacto -->
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="eyebrow">Contacto</span>
+      <h2>Hablemos de tu proyecto</h2>
+      <p>Escríbenos y un especialista te contactará en menos de 48 horas.</p>
+    </div>
+    <div class="grid cols-2">
+      <div data-animate>{% include map.html %}</div>
+      <div class="card" style="padding:2rem;" data-animate>
+        {% include contact-form.html %}
+      </div>
+    </div>
+  </div>
+</section>

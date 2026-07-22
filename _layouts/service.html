@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html trail="Servicios|/servicios/" current=page.title %}
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2" style="grid-template-columns: 2fr 1fr; align-items:start;">
+      <div>
+        {% if page.image %}
+          <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="border-radius:12px; margin-bottom:2rem;" loading="lazy">
+        {% endif %}
+
+        {{ content }}
+
+        {% if page.benefits %}
+          <h2>Beneficios</h2>
+          <ul>
+            {% for b in page.benefits %}<li>{{ b }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if page.methodology %}
+          <h2>Metodología</h2>
+          <ol>
+            {% for step in page.methodology %}<li>{{ step }}</li>{% endfor %}
+          </ol>
+        {% endif %}
+
+        {% if page.faq %}
+          <h2>Preguntas frecuentes</h2>
+          {% for f in page.faq %}
+            <details class="faq-item">
+              <summary>{{ f.question }} <span>+</span></summary>
+              <p>{{ f.answer }}</p>
+            </details>
+          {% endfor %}
+        {% endif %}
+      </div>
+
+      <aside>
+        <div class="card" style="padding:1.5rem;">
+          <h3>Solicita este servicio</h3>
+          <p class="text-muted">Completa el formulario y un especialista te contactará en menos de 48 horas.</p>
+          {% include contact-form.html %}
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>

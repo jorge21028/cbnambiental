@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html trail="Investigadores|/investigadores/" current=page.name %}
+    <div style="display:flex; gap:1.5rem; align-items:center; flex-wrap:wrap;">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.name }}" style="width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,0.4);">
+      <div>
+        <h1 style="margin-bottom:0.25rem;">{{ page.name }}</h1>
+        <p>{{ page.profession }} · {{ page.specialty }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 820px;">
+    <h2>Biografía</h2>
+    {{ content }}
+
+    {% if page.experience %}
+      <h2>Experiencia</h2>
+      <ul>{% for e in page.experience %}<li>{{ e }}</li>{% endfor %}</ul>
+    {% endif %}
+
+    {% if page.publications %}
+      <h2>Publicaciones destacadas</h2>
+      <ul>{% for p in page.publications %}<li>{{ p }}</li>{% endfor %}</ul>
+    {% endif %}
+
+    <h2>Enlaces y contacto</h2>
+    <div class="tag-list">
+      {% if page.linkedin %}<a class="tag" href="{{ page.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+      {% if page.orcid %}<a class="tag" href="{{ page.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
+      {% if page.researchgate %}<a class="tag" href="{{ page.researchgate }}" target="_blank" rel="noopener">ResearchGate</a>{% endif %}
+      {% if page.scholar %}<a class="tag" href="{{ page.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+      {% if page.email %}<a class="tag" href="mailto:{{ page.email }}">{{ page.email }}</a>{% endif %}
+    </div>
+  </div>
+</section>

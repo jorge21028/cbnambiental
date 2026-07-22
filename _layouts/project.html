@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html trail="Proyectos|/proyectos/" current=page.title %}
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.summary }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2" style="grid-template-columns: 2fr 1fr;">
+      <div>
+        {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="border-radius:12px; margin-bottom:2rem;" loading="lazy">{% endif %}
+        {{ content }}
+
+        {% if page.gallery %}
+          <h2>Galería</h2>
+          <div class="grid cols-3">
+            {% for img in page.gallery %}
+              <img src="{{ img | relative_url }}" alt="{{ page.title }} - imagen" loading="lazy" style="border-radius:8px;">
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+      <aside>
+        <div class="card" style="padding:1.5rem;">
+          <h3>Ficha del proyecto</h3>
+          <p><strong>Cliente:</strong><br>{{ page.client }}</p>
+          <p><strong>Ubicación:</strong><br>{{ page.location }}</p>
+          <p><strong>Fecha:</strong><br>{{ page.date | date: "%B %Y" }}</p>
+          <p><strong>Categoría:</strong><br>{{ page.category }}</p>
+          {% if page.services_involved %}
+            <p><strong>Servicios involucrados:</strong></p>
+            <div class="tag-list">
+              {% for s in page.services_involved %}<span class="tag">{{ s }}</span>{% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
