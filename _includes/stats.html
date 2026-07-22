@@ -1,0 +1,12 @@
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="grid cols-4">
+      {% for stat in site.data.stats %}
+        <div class="stat-card" data-animate>
+          <span class="stat-number">{{ stat.number }}</span>
+          <span class="stat-label">{{ stat.label }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+{% assign p = include.item %}
+<article class="card" data-filterable data-category="{{ p.category }}" data-year="{{ p.date | date: '%Y' }}" data-province="{{ p.province }}" data-animate>
+  <div class="card-image" style="background-image:url('{{ p.image | default: '/assets/images/projects/default.jpg' | relative_url }}');"></div>
+  <div class="card-body">
+    <span class="card-meta">{{ p.category }} · {{ p.date | date: "%Y" }}</span>
+    <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+    <p class="card-excerpt">{{ p.summary }}</p>
+    <a href="{{ p.url | relative_url }}" class="card-link">Ver proyecto →</a>
+  </div>
+</article>

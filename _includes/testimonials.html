@@ -1,0 +1,22 @@
+<section class="section" style="background: var(--color-surface);">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="eyebrow">Testimonios</span>
+      <h2>La confianza de nuestros clientes</h2>
+    </div>
+    <div class="grid cols-3">
+      {% for t in site.data.testimonials %}
+        <div class="testimonial-card" data-animate>
+          <p class="testimonial-quote">&ldquo;{{ t.quote }}&rdquo;</p>
+          <div class="testimonial-author">
+            <img src="{{ t.avatar | relative_url }}" alt="" loading="lazy">
+            <div>
+              <strong>{{ t.name }}</strong>
+              <span>{{ t.role }}</span>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

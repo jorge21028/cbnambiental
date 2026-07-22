@@ -1,0 +1,10 @@
+{% assign s = include.item %}
+<article class="card" data-animate>
+  <div class="card-image" style="background-image:url('{{ s.image | default: '/assets/images/services/default.jpg' | relative_url }}');"></div>
+  <div class="card-body">
+    <span class="card-meta">Servicio</span>
+    <h3><a href="{{ s.url | relative_url }}">{{ s.title }}</a></h3>
+    <p class="card-excerpt">{{ s.summary | default: s.excerpt }}</p>
+    <a href="{{ s.url | relative_url }}" class="card-link">Ver servicio →</a>
+  </div>
+</article>

@@ -1,0 +1,10 @@
+<script src="{{ '/assets/js/dark-mode.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/navbar.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/scroll-animations.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/back-to-top.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/lazy-load.js' | relative_url }}" defer></script>
+{% if page.layout == 'blog' or page.url == '/blog/' or page.collection == 'projects' or page.collection == 'publications' %}
+<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/filters.js' | relative_url }}" defer></script>
+{% endif %}
+<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>

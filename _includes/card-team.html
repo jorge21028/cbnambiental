@@ -1,0 +1,9 @@
+{% assign m = include.item %}
+<article class="card" data-animate>
+  <div class="card-image" style="background-image:url('{{ m.image | default: '/assets/images/team/default.jpg' | relative_url }}');"></div>
+  <div class="card-body">
+    <span class="card-meta">{{ m.position }}</span>
+    <h3><a href="{{ m.url | relative_url }}">{{ m.name }}</a></h3>
+    <a href="{{ m.url | relative_url }}" class="card-link">Ver perfil →</a>
+  </div>
+</article>

@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{%- assign page_title = page.title | default: site.title -%}
+{%- assign page_description = page.description | default: site.description -%}
+{%- assign page_image = page.image | default: '/assets/images/og-default.jpg' | absolute_url -%}
+
+<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+<meta name="description" content="{{ page_description }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- Favicon / PWA -->
+<link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="{{ site.theme.color_primary }}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_description }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ page_image }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_description }}">
+<meta name="twitter:image" content="{{ page_image }}">
+
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Estilos -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<!-- Feed / SEO -->
+{% feed_meta %}
+{% seo %}
+
+<!-- JSON-LD Organización -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EnvironmentalOrganization",
+  "name": "{{ site.company.legal_name }}",
+  "url": "{{ site.url }}",
+  "logo": "{{ '/assets/images/logo.png' | absolute_url }}",
+  "email": "{{ site.company.email }}",
+  "telephone": "{{ site.company.phone }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.company.address }}"
+  },
+  "sameAs": [
+    "{{ site.company.social.linkedin }}",
+    "{{ site.company.social.facebook }}",
+    "{{ site.company.social.instagram }}"
+  ]
+}
+</script>
