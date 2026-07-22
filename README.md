@@ -1,4 +1,4 @@
-# CBN Ambiental Consulting — Sitio Web Institucional
+# SBN Ambiental Consulting — Sitio Web Institucional
 
 Sitio web institucional para **CBN Ambiental Consulting**, desarrollado con **Jekyll**, **HTML5**, **CSS3 (Sass)** y **JavaScript vanilla**, 100% compatible con **GitHub Pages**. Todo el contenido dinámico (proyectos, investigadores, equipo, publicaciones, conferencias, experiencias y blog) se administra creando archivos Markdown — **no es necesario tocar el HTML** para agregar contenido nuevo.
 
