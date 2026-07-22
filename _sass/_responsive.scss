@@ -1,0 +1,5 @@
+// Ajustes puntuales adicionales de responsive que no encajan como mixin local
+@media (max-width: #{$bp-md - 1px}) {
+  .hero { min-height: 78vh; text-align: left; }
+  .section { padding: $space-6 0; }
+}

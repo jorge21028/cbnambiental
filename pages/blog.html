@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+description: "Artículos, análisis y novedades sobre gestión ambiental."
+pagination:
+  enabled: true
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html current="Blog" %}
+    <h1>Blog</h1>
+    <p>Artículos y análisis sobre gestión ambiental, sostenibilidad e ingeniería.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="search-box" style="max-width:420px; margin-bottom:2rem;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="search" data-search-input placeholder="Buscar artículos...">
+    </div>
+    <div data-search-results class="card" style="display:none; position:relative; z-index:5; padding:0.5rem; margin-bottom:1.5rem;"></div>
+
+    <div class="grid cols-3">
+      {% for post in paginator.posts %}{% include card-post.html item=post %}{% endfor %}
+    </div>
+
+    {% if paginator.total_pages > 1 %}
+      <nav class="pagination" aria-label="Paginación del blog">
+        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">‹</a>{% endif %}
+        {% for p in (1..paginator.total_pages) %}
+          {% if p == paginator.page %}<span class="current">{{ p }}</span>{% else %}<a href="{{ site.paginate_path | replace: ':num', p | relative_url }}">{{ p }}</a>{% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">›</a>{% endif %}
+      </nav>
+    {% endif %}
+  </div>
+</section>

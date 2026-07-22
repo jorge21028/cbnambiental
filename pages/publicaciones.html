@@ -1,0 +1,29 @@
+---
+layout: default
+title: Publicaciones científicas
+permalink: /publicaciones/
+description: "Publicaciones científicas de CBN Ambiental Consulting."
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html current="Publicaciones" %}
+    <h1>Publicaciones científicas</h1>
+    <p>Investigación aplicada al servicio de la gestión ambiental.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2">
+      {% for pub in site.publications %}
+        <article class="card" style="flex-direction:row;" data-animate>
+          <div class="card-body">
+            <span class="card-meta">{{ pub.journal }} · {{ pub.year }}</span>
+            <h3><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h3>
+            <p class="card-excerpt">{{ pub.authors | join: ", " }}</p>
+            <a href="{{ pub.url | relative_url }}" class="card-link">Ver publicación →</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

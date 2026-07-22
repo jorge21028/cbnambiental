@@ -1,0 +1,28 @@
+---
+layout: default
+title: Experiencias
+permalink: /experiencias/
+description: "Trabajos realizados, consultorías y proyectos especiales."
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html current="Experiencias" %}
+    <h1>Experiencias</h1>
+    <p>Un recorrido por trabajos, consultorías y proyectos especiales.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2">
+      {% for e in site.experiences %}
+        <article class="card" data-animate>
+          <div class="card-body">
+            <h3><a href="{{ e.url | relative_url }}">{{ e.title }}</a></h3>
+            <p class="card-excerpt">{{ e.summary }}</p>
+            <a href="{{ e.url | relative_url }}" class="card-link">Leer más →</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

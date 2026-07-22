@@ -1,0 +1,69 @@
+// ==========================================================================
+// Variables globales — paleta y escalas del sitio
+// Cambiar aquí actualiza el diseño completo sin tocar otros archivos.
+// ==========================================================================
+
+// --- Paleta principal (sostenibilidad: verde / azul agua / tierra) -------
+$color-primary:       #1E5F4E;
+$color-primary-dark:  #153F34;
+$color-primary-light: #E7F0EC;
+$color-secondary:     #2E86AB;
+$color-secondary-light: #E5F2F7;
+$color-accent:        #B08968;
+$color-white:         #FFFFFF;
+$color-light:         #F7F9F8;
+$color-gray-100:      #F1F3F2;
+$color-gray-300:      #D7DDDB;
+$color-gray-500:      #6B7280;
+$color-gray-700:      #374151;
+$color-dark:          #12211D;
+
+// --- Tipografía ------------------------------------------------------------
+$font-heading: 'Poppins', 'Segoe UI', sans-serif;
+$font-body: 'Inter', 'Segoe UI', sans-serif;
+
+$fs-xs: 0.75rem;
+$fs-sm: 0.875rem;
+$fs-base: 1rem;
+$fs-lg: 1.125rem;
+$fs-xl: 1.375rem;
+$fs-2xl: 1.75rem;
+$fs-3xl: 2.25rem;
+$fs-4xl: 3rem;
+
+// --- Espaciado (escala consistente) ----------------------------------------
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 1rem;
+$space-4: 1.5rem;
+$space-5: 2rem;
+$space-6: 3rem;
+$space-7: 4.5rem;
+$space-8: 6rem;
+
+// --- Layout ------------------------------------------------------------
+$container-max: 1200px;
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 20px;
+$shadow-sm: 0 1px 3px rgba(18, 33, 29, 0.08);
+$shadow-md: 0 8px 24px rgba(18, 33, 29, 0.10);
+$shadow-lg: 0 20px 48px rgba(18, 33, 29, 0.14);
+
+// --- Breakpoints (mobile-first) --------------------------------------------
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+@mixin respond($bp) {
+  @if $bp == sm { @media (min-width: $bp-sm) { @content; } }
+  @if $bp == md { @media (min-width: $bp-md) { @content; } }
+  @if $bp == lg { @media (min-width: $bp-lg) { @content; } }
+  @if $bp == xl { @media (min-width: $bp-xl) { @content; } }
+}
+
+// --- Transiciones ------------------------------------------------------
+$transition-fast: 0.15s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;

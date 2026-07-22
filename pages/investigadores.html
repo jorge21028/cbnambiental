@@ -1,0 +1,20 @@
+---
+layout: default
+title: Investigadores
+permalink: /investigadores/
+description: "Equipo de investigadores y especialistas de CBN Ambiental Consulting."
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html current="Investigadores" %}
+    <h1>Investigadores</h1>
+    <p>Conoce al equipo científico detrás de nuestras investigaciones y publicaciones.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="grid cols-3">
+      {% for r in site.researchers %}{% include card-researcher.html item=r %}{% endfor %}
+    </div>
+  </div>
+</section>

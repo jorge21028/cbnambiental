@@ -1,0 +1,16 @@
+---
+# El front matter vacío es obligatorio: le indica a Jekyll que procese
+# este archivo con el motor de Sass antes de servirlo como CSS.
+---
+@import "variables";
+@import "base";
+@import "buttons";
+@import "navbar";
+@import "hero";
+@import "cards";
+@import "forms";
+@import "footer";
+@import "animations";
+@import "utilities";
+@import "dark-mode";
+@import "responsive";

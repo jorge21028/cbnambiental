@@ -1,0 +1,20 @@
+---
+layout: default
+title: Equipo de trabajo
+permalink: /equipo/
+description: "Equipo profesional de CBN Ambiental Consulting."
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html current="Equipo" %}
+    <h1>Equipo de trabajo</h1>
+    <p>Un equipo multidisciplinario comprometido con la excelencia técnica.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="grid cols-4">
+      {% for m in site.team %}{% include card-team.html item=m %}{% endfor %}
+    </div>
+  </div>
+</section>

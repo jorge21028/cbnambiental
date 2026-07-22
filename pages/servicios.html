@@ -1,0 +1,23 @@
+---
+layout: default
+title: Servicios
+permalink: /servicios/
+description: "Servicios ambientales integrales: monitoreo, estudios, autorizaciones, tratamiento, auditorías, capacitación e investigación."
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html current="Servicios" %}
+    <h1>Servicios</h1>
+    <p>Soluciones ambientales integrales adaptadas a cada etapa de tu proyecto.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid cols-3">
+      {% for s in site.services %}
+        {% include card-service.html item=s %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

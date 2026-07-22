@@ -1,0 +1,30 @@
+---
+layout: default
+title: Conferencias
+permalink: /conferencias/
+description: "Conferencias y charlas dictadas por el equipo de CBN Ambiental Consulting."
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html current="Conferencias" %}
+    <h1>Conferencias</h1>
+    <p>Participación de nuestro equipo en eventos y foros especializados.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="grid cols-3">
+      {% for c in site.conferences %}
+        <article class="card" data-animate>
+          <div class="card-image" style="background-image:url('{{ c.photos[0] | default: '/assets/images/conferences/default.jpg' | relative_url }}');"></div>
+          <div class="card-body">
+            <span class="card-meta">{{ c.date | date: "%d %b %Y" }}</span>
+            <h3><a href="{{ c.url | relative_url }}">{{ c.title }}</a></h3>
+            <p class="card-excerpt">{{ c.speaker }} · {{ c.event }}</p>
+            <a href="{{ c.url | relative_url }}" class="card-link">Ver detalle →</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

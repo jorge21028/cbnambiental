@@ -1,0 +1,32 @@
+---
+layout: default
+title: Contacto
+permalink: /contacto/
+description: "Contáctanos para solicitar asesoría ambiental."
+---
+<section class="page-hero" data-animate>
+  <div class="container">
+    {% include breadcrumbs.html current="Contacto" %}
+    <h1>Contacto</h1>
+    <p>Conversemos sobre cómo podemos ayudarte a alcanzar tus objetivos ambientales.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2">
+      <div data-animate>
+        <h2>Información de contacto</h2>
+        <p><strong>Dirección:</strong><br>{{ site.company.address }}</p>
+        <p><strong>Correo:</strong><br><a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></p>
+        <p><strong>Teléfono:</strong><br><a href="tel:{{ site.company.phone | replace: ' ', '' }}">{{ site.company.phone }}</a></p>
+        <p><strong>Horario de atención:</strong><br>{{ site.company.schedule }}</p>
+        <div style="margin-top:2rem;">{% include map.html %}</div>
+      </div>
+      <div class="card" style="padding:2rem;" data-animate>
+        <h2>Envíanos un mensaje</h2>
+        {% include contact-form.html %}
+      </div>
+    </div>
+  </div>
+</section>

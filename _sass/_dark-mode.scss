@@ -1,0 +1,6 @@
+// Ajustes finos exclusivos para el modo oscuro (además de las variables en _base.scss)
+[data-theme="dark"] {
+  .navbar { background: var(--color-bg); }
+  .card, .testimonial-card, .toc { background: var(--color-surface); }
+  img.dim-on-dark { filter: brightness(0.85); }
+}
