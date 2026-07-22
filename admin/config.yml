@@ -1,0 +1,335 @@
+backend:
+  name: github
+  repo: jorge21028/cbnambiental      # usuario/repositorio
+  branch: main
+  base_url: https://api.netlify.com  # servidor de autenticación (ver instrucciones)
+  auth_endpoint: auth
+
+# Flujo editorial: cada cambio queda como "borrador" y luego se publica
+# desde el panel (evita publicar contenido a medias por error).
+# Cambia a false si prefieres que todo se publique de inmediato.
+publish_mode: editorial_workflow
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+locale: "es"
+
+site_url: https://jorge21028.github.io/cbnambiental
+display_url: https://jorge21028.github.io/cbnambiental
+
+collections:
+
+  # ============================================================
+  # EQUIPO
+  # ============================================================
+  - name: "team"
+    label: "Equipo"
+    label_singular: "Integrante del equipo"
+    folder: "_team"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "name"
+    fields:
+      - { label: "Nombre completo", name: "name", widget: "string" }
+      - { label: "Cargo", name: "position", widget: "string" }
+      - { label: "Foto", name: "image", widget: "image" }
+      - { label: "Correo electrónico", name: "email", widget: "string" }
+      - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+      - label: "Experiencia (una línea por punto)"
+        name: "experience"
+        widget: "list"
+        field: { label: "Punto", name: "item", widget: "string" }
+      - { label: "Biografía", name: "body", widget: "markdown" }
+
+  # ============================================================
+  # INVESTIGADORES
+  # ============================================================
+  - name: "researchers"
+    label: "Investigadores"
+    label_singular: "Investigador/a"
+    folder: "_researchers"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "name"
+    fields:
+      - { label: "Nombre completo", name: "name", widget: "string" }
+      - { label: "Profesión", name: "profession", widget: "string" }
+      - { label: "Especialidad", name: "specialty", widget: "string" }
+      - { label: "Foto", name: "image", widget: "image" }
+      - { label: "Correo electrónico", name: "email", widget: "string" }
+      - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+      - { label: "ORCID", name: "orcid", widget: "string", required: false }
+      - { label: "ResearchGate", name: "researchgate", widget: "string", required: false }
+      - { label: "Google Scholar", name: "scholar", widget: "string", required: false }
+      - label: "Experiencia (una línea por punto)"
+        name: "experience"
+        widget: "list"
+        field: { label: "Punto", name: "item", widget: "string" }
+      - label: "Publicaciones destacadas"
+        name: "publications"
+        widget: "list"
+        field: { label: "Publicación", name: "item", widget: "string" }
+      - { label: "Biografía", name: "body", widget: "markdown" }
+
+  # ============================================================
+  # SERVICIOS
+  # ============================================================
+  - name: "services"
+    label: "Servicios"
+    label_singular: "Servicio"
+    folder: "_services"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Resumen (aparece en la tarjeta)", name: "summary", widget: "text" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Orden de aparición", name: "order", widget: "number", required: false }
+      - label: "Beneficios"
+        name: "benefits"
+        widget: "list"
+        field: { label: "Beneficio", name: "item", widget: "string" }
+      - label: "Metodología (pasos)"
+        name: "methodology"
+        widget: "list"
+        field: { label: "Paso", name: "item", widget: "string" }
+      - label: "Preguntas frecuentes"
+        name: "faq"
+        widget: "list"
+        fields:
+          - { label: "Pregunta", name: "question", widget: "string" }
+          - { label: "Respuesta", name: "answer", widget: "text" }
+      - { label: "Descripción completa", name: "body", widget: "markdown" }
+
+  # ============================================================
+  # PROYECTOS
+  # ============================================================
+  - name: "projects"
+    label: "Proyectos"
+    label_singular: "Proyecto"
+    folder: "_projects"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Título del proyecto", name: "title", widget: "string" }
+      - { label: "Cliente", name: "client", widget: "string" }
+      - { label: "Ciudad", name: "location", widget: "string" }
+      - { label: "Provincia", name: "province", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Categoría", name: "category", widget: "string" }
+      - label: "Servicios involucrados"
+        name: "services_involved"
+        widget: "list"
+        field: { label: "Servicio", name: "item", widget: "string" }
+      - { label: "Imagen principal", name: "image", widget: "image" }
+      - label: "Galería de imágenes"
+        name: "gallery"
+        widget: "list"
+        field: { label: "Imagen", name: "item", widget: "image" }
+      - { label: "Resumen", name: "summary", widget: "text" }
+      - { label: "Desarrollo y resultados", name: "body", widget: "markdown" }
+
+  # ============================================================
+  # PUBLICACIONES CIENTÍFICAS
+  # ============================================================
+  - name: "publications"
+    label: "Publicaciones"
+    label_singular: "Publicación"
+    folder: "_publications"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - label: "Autores"
+        name: "authors"
+        widget: "list"
+        field: { label: "Autor/a", name: "item", widget: "string" }
+      - { label: "Revista / Journal", name: "journal", widget: "string" }
+      - { label: "Año", name: "year", widget: "number", value_type: "int" }
+      - { label: "DOI", name: "doi", widget: "string", required: false }
+      - { label: "Archivo PDF", name: "pdf", widget: "file", required: false }
+      - { label: "Enlace externo", name: "external_link", widget: "string", required: false }
+      - { label: "Número de citas", name: "citations", widget: "number", value_type: "int", required: false }
+      - { label: "Resumen", name: "body", widget: "markdown" }
+
+  # ============================================================
+  # CONFERENCIAS
+  # ============================================================
+  - name: "conferences"
+    label: "Conferencias"
+    label_singular: "Conferencia"
+    folder: "_conferences"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Ponente", name: "speaker", widget: "string" }
+      - { label: "Evento", name: "event", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Lugar", name: "place", widget: "string" }
+      - label: "Fotos"
+        name: "photos"
+        widget: "list"
+        field: { label: "Foto", name: "item", widget: "image" }
+      - { label: "Descripción", name: "body", widget: "markdown" }
+
+  # ============================================================
+  # EXPERIENCIAS / CONSULTORÍAS
+  # ============================================================
+  - name: "experiences"
+    label: "Experiencias"
+    label_singular: "Experiencia"
+    folder: "_experiences"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Resumen", name: "summary", widget: "text" }
+      - { label: "Descripción completa", name: "body", widget: "markdown", required: false }
+
+  # ============================================================
+  # BLOG
+  # ============================================================
+  - name: "posts"
+    label: "Blog"
+    label_singular: "Artículo"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
+      - { label: "Imagen de portada", name: "image", widget: "image" }
+      - { label: "Autor/a", name: "author", widget: "string" }
+      - label: "Categorías"
+        name: "categories"
+        widget: "list"
+        field: { label: "Categoría", name: "item", widget: "string" }
+      - label: "Etiquetas"
+        name: "tags"
+        widget: "list"
+        field: { label: "Etiqueta", name: "item", widget: "string" }
+      - label: "Tabla de contenido (secciones)"
+        name: "toc"
+        widget: "list"
+        required: false
+        field: { label: "Sección", name: "item", widget: "string" }
+      - { label: "Resumen corto (excerpt)", name: "excerpt", widget: "text" }
+      - { label: "Contenido del artículo", name: "body", widget: "markdown" }
+
+  # ============================================================
+  # PÁGINAS ESTÁTICAS
+  # ============================================================
+  - name: "pages"
+    label: "Páginas"
+    label_singular: "Página"
+    files:
+      - name: "nosotros"
+        label: "Nosotros"
+        file: "pages/nosotros.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string", required: false }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+
+  # ============================================================
+  # CONFIGURACIÓN GENERAL DEL SITIO (_data)
+  # ============================================================
+  - name: "settings"
+    label: "Configuración del sitio"
+    files:
+
+      - name: "home"
+        label: "Página de inicio (hero y llamada a la acción)"
+        file: "_data/settings.yml"
+        fields:
+          - label: "Sección principal (hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Título principal", name: "headline", widget: "string" }
+              - { label: "Subtítulo", name: "subheadline", widget: "text" }
+              - { label: "Imagen de fondo", name: "image", widget: "image" }
+              - { label: "Texto botón principal", name: "cta_primary_text", widget: "string" }
+              - { label: "Enlace botón principal", name: "cta_primary_url", widget: "string" }
+              - { label: "Texto botón secundario", name: "cta_secondary_text", widget: "string" }
+              - { label: "Enlace botón secundario", name: "cta_secondary_url", widget: "string" }
+          - label: "Sección de llamada a la acción (CTA)"
+            name: "cta_section"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Texto del botón", name: "button_text", widget: "string" }
+              - { label: "Enlace del botón", name: "button_url", widget: "string" }
+
+      - name: "stats"
+        label: "Estadísticas (números destacados)"
+        file: "_data/stats.yml"
+        fields:
+          - name: "stats"
+            label: "Estadísticas"
+            widget: "list"
+            top_level_label: false
+            fields:
+              - { label: "Número", name: "number", widget: "string" }
+              - { label: "Descripción", name: "label", widget: "string" }
+              - label: "Ícono"
+                name: "icon"
+                widget: "select"
+                options: ["chart", "clock", "handshake", "flask"]
+
+      - name: "clients"
+        label: "Clientes / logos"
+        file: "_data/clients.yml"
+        fields:
+          - name: "clients"
+            label: "Clientes"
+            widget: "list"
+            top_level_label: false
+            fields:
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+
+      - name: "testimonials"
+        label: "Testimonios"
+        file: "_data/testimonials.yml"
+        fields:
+          - name: "testimonials"
+            label: "Testimonios"
+            widget: "list"
+            top_level_label: false
+            fields:
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Cargo / Rol", name: "role", widget: "string" }
+              - { label: "Cita", name: "quote", widget: "text" }
+              - { label: "Foto", name: "avatar", widget: "image" }
+
+      - name: "navigation"
+        label: "Menú de navegación"
+        file: "_data/navigation.yml"
+        fields:
+          - label: "Menú principal"
+            name: "main"
+            widget: "list"
+            fields:
+              - { label: "Texto", name: "title", widget: "string" }
+              - { label: "Enlace", name: "url", widget: "string" }
+          - label: "Footer — Servicios"
+            name: "footer_services"
+            widget: "list"
+            fields:
+              - { label: "Texto", name: "title", widget: "string" }
+              - { label: "Enlace", name: "url", widget: "string" }
+          - label: "Footer — Empresa"
+            name: "footer_company"
+            widget: "list"
+            fields:
+              - { label: "Texto", name: "title", widget: "string" }
+              - { label: "Enlace", name: "url", widget: "string" }
