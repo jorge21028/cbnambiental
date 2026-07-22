@@ -14,11 +14,11 @@
     }
   }
 
-  function getPreferredTheme() {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) return stored;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  }
+ function getPreferredTheme() {
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored) return stored;
+  return "light"; // Tema claro por defecto, sin importar la preferencia del sistema
+ }
 
   applyTheme(getPreferredTheme());
 
