@@ -8,9 +8,9 @@ category: "Estudios ambientales"
 services_involved:
   - "Estudios ambientales"
   - "Monitoreo de calidad de agua"
-image: "/assets/images/projects/cuenca-yaque-1.jpg"
+image: "https://images.unsplash.com/photo-1606438963587-963cd885bacf?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 gallery:
-  - "/assets/images/projects/cuenca-yaque-1.jpg"
+  - "https://images.unsplash.com/photo-1455577380025-4321f1e1dca7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 summary: "Levantamiento de línea base ambiental para apoyar la planificación territorial de la cuenca."
 ---
 
