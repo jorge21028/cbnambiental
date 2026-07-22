@@ -7,7 +7,7 @@ description: "Historia, misión, visión, valores y equipo de CBN Ambiental Cons
 
 ## Nuestra historia
 
-CBN Ambiental Consulting nace con el propósito de acompañar a empresas e instituciones en la construcción de un desarrollo compatible con el entorno natural. A lo largo de los años hemos consolidado un equipo multidisciplinario capaz de resolver desafíos ambientales complejos con soluciones técnicas y sostenibles.
+SBN Ambiental Consulting nace con el propósito de acompañar a empresas e instituciones en la construcción de un desarrollo compatible con el entorno natural. A lo largo de los años hemos consolidado un equipo multidisciplinario capaz de resolver desafíos ambientales complejos con soluciones técnicas y sostenibles.
 
 ## Misión
 
