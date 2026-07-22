@@ -2,7 +2,7 @@
 layout: page
 title: Nosotros
 permalink: /nosotros/
-description: "Historia, misión, visión, valores y equipo de CBN Ambiental Consulting."
+description: "Historia, misión, visión, valores y equipo de SBN Ambiental Consulting."
 ---
 
 ## Nuestra historia
