@@ -2,7 +2,7 @@
 name: "Dra. María Fernández"
 profession: "Ingeniera Ambiental, Ph.D."
 specialty: "Calidad de agua y ecotoxicología"
-image: "/assets/images/team/maria-fernandez.jpg"
+image: "https://plus.unsplash.com/premium_photo-1739786996040-32bde1db0610?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 email: "maria.fernandez@cbnambiental.com"
 linkedin: "https://linkedin.com/in/maria-fernandez"
 orcid: "https://orcid.org/0000-0000-0000-0001"
