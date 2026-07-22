@@ -1,0 +1,132 @@
+# ==========================================================================
+# CBN Ambiental Consulting — Configuración central del sitio Jekyll
+# Modifica estos valores para personalizar el sitio sin tocar el HTML.
+# ==========================================================================
+
+title: "CBN Ambiental Consulting"
+tagline: "Ingeniería y consultoría ambiental para un futuro sostenible"
+description: >-
+  Consultora ambiental especializada en monitoreo de calidad de agua,
+  estudios ambientales, gestión de autorizaciones, diseño y construcción
+  de sistemas de tratamiento, auditorías, capacitación e investigación.
+url: "https://cbnambiental.github.io"   # Cambiar por el dominio real
+baseurl: ""                             # Cambiar a "/nombre-repo" si se usa Project Page en GitHub Pages
+lang: es
+
+# --------------------------------------------------------------------------
+# Información de contacto y redes (usada en footer, contacto y JSON-LD)
+# --------------------------------------------------------------------------
+company:
+  legal_name: "CBN Ambiental Consulting, SRL"
+  email: "info@cbnambiental.com"
+  phone: "+1 (809) 000-0000"
+  whatsapp: "+18090000000"
+  address: "Av. Ambiental 123, Santo Domingo, República Dominicana"
+  schedule: "Lunes a Viernes, 8:00am – 5:00pm"
+  latitude: 18.4861
+  longitude: -69.9312
+  social:
+    linkedin: "https://linkedin.com/company/cbnambiental"
+    instagram: "https://instagram.com/cbnambiental"
+    facebook: "https://facebook.com/cbnambiental"
+    twitter: "https://twitter.com/cbnambiental"
+    youtube: "https://youtube.com/@cbnambiental"
+
+# --------------------------------------------------------------------------
+# Tema / colores (se inyectan también como CSS variables, ver _sass/_variables.scss)
+# --------------------------------------------------------------------------
+theme:
+  color_primary: "#1E5F4E"      # verde naturaleza
+  color_primary_dark: "#153F34"
+  color_secondary: "#2E86AB"    # azul agua
+  color_accent: "#B08968"       # tono tierra
+  color_light: "#F7F9F8"
+  color_gray: "#6B7280"
+
+# --------------------------------------------------------------------------
+# Colecciones Jekyll — cada una se administra creando archivos .md nuevos
+# --------------------------------------------------------------------------
+collections:
+  services:
+    output: true
+    permalink: /servicios/:path/
+  projects:
+    output: true
+    permalink: /proyectos/:path/
+  researchers:
+    output: true
+    permalink: /investigadores/:path/
+  team:
+    output: true
+    permalink: /equipo/:path/
+  publications:
+    output: true
+    permalink: /publicaciones/:path/
+  conferences:
+    output: true
+    permalink: /conferencias/:path/
+  experiences:
+    output: true
+    permalink: /experiencias/:path/
+
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post", author: "CBN Ambiental Consulting" }
+  - scope: { path: "", type: "services" }
+    values: { layout: "service" }
+  - scope: { path: "", type: "projects" }
+    values: { layout: "project" }
+  - scope: { path: "", type: "researchers" }
+    values: { layout: "researcher" }
+  - scope: { path: "", type: "team" }
+    values: { layout: "team" }
+  - scope: { path: "", type: "publications" }
+    values: { layout: "publication" }
+  - scope: { path: "", type: "conferences" }
+    values: { layout: "conference" }
+  - scope: { path: "", type: "experiences" }
+    values: { layout: "experience" }
+  - scope: { path: "", type: "pages" }
+    values: { layout: "page" }
+
+permalink: /blog/:year/:month/:day/:title/
+
+# --------------------------------------------------------------------------
+# Paginación del blog
+# --------------------------------------------------------------------------
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: "/page/:num/"
+  title: ":title - página :num"
+  collection: posts
+  sort_reverse: true
+
+# --------------------------------------------------------------------------
+# Plugins (todos soportados de forma nativa por GitHub Pages)
+# --------------------------------------------------------------------------
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+
+feed:
+  path: /blog/feed.xml
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "*.gemspec"
