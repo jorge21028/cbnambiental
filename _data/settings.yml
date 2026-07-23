@@ -1,16 +1,14 @@
 hero:
-  headline: "Ingeniería ambiental con impacto real"
-  subheadline: >-
-    Acompañamos a empresas e instituciones en el diseño de soluciones
+  headline: Ingeniería ambiental con impacto real
+  subheadline: Acompañamos a empresas e instituciones en el diseño de soluciones
     ambientales sostenibles, respaldadas por ciencia y experiencia técnica.
-  image: "/assets/images/hero/hero-main.jpg"
-  cta_primary_text: "Solicitar asesoría"
-  cta_primary_url: "/contacto/"
-  cta_secondary_text: "Nuestros servicios"
-  cta_secondary_url: "/servicios/"
-
+  image: /assets/images/uploads/abstract-soft-focus-sunset-field-landscape-of-yellow-flowers-and-grass-meadow-warm-golden-hour-sunset-sunrise-time-tranquil-spring-summer-nature-closeup-and-blurred-forest-background-idyllic-nature-photo.jpg
+  cta_primary_text: Solicitar asesoría
+  cta_primary_url: /contacto/
+  cta_secondary_text: Nuestros servicios
+  cta_secondary_url: /servicios/
 cta_section:
-  title: "¿Listo para impulsar la sostenibilidad de tu proyecto?"
-  text: "Conversemos sobre cómo podemos ayudarte a cumplir tus objetivos ambientales."
-  button_text: "Contáctanos"
-  button_url: "/contacto/"
+  title: ¿Listo para impulsar la sostenibilidad de tu proyecto?
+  text: Conversemos sobre cómo podemos ayudarte a cumplir tus objetivos ambientales.
+  button_text: Contáctanos
+  button_url: /contacto/
