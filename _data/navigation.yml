@@ -5,7 +5,7 @@ main:
     url: "/nosotros/"
     children:
     - title: "Experiencias"
-    url: "/experiencias/
+    url: "/experiencias/"
   - title: "Servicios"
     url: "/servicios/"
   - title: "Proyectos"
