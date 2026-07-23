@@ -3,6 +3,9 @@ main:
     url: "/"
   - title: "Nosotros"
     url: "/nosotros/"
+    children:
+      - title: "Experiencias"
+        url: "/experiencias/
   - title: "Servicios"
     url: "/servicios/"
   - title: "Proyectos"
