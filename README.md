@@ -178,9 +178,9 @@ Contenido del artículo...
 Edita las variables en `_sass/_variables.scss`:
 
 ```scss
-$color-primary:   #1E5F4E; // verde naturaleza
-$color-secondary: #2E86AB; // azul agua
-$color-accent:    #B08968; // tono tierra
+$color-primary:   #0F6A2F; // verde del logo (letras S/B, texto)
+$color-secondary: #0B8BC5; // azul agua del logo (letra N, ondas)
+$color-accent:    #6FA828; // verde hoja/montaña del logo (acentos)
 ```
 
 También puedes ajustar los colores globales usados en JSON-LD y el manifest PWA en `_config.yml` (`theme:`) y `site.webmanifest`.

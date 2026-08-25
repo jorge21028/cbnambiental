@@ -3,13 +3,13 @@
 // Cambiar aquí actualiza el diseño completo sin tocar otros archivos.
 // ==========================================================================
 
-// --- Paleta principal (sostenibilidad: verde / azul agua / tierra) -------
-$color-primary:       #1E5F4E;
-$color-primary-dark:  #153F34;
-$color-primary-light: #E7F0EC;
-$color-secondary:     #2E86AB;
-$color-secondary-light: #E5F2F7;
-$color-accent:        #B08968;
+// --- Paleta principal (línea gráfica del logo: verde bosque / azul agua) -
+$color-primary:       #0F6A2F;   // verde del logo (letras S/B, texto)
+$color-primary-dark:  #0B4D22;   // verde oscuro (hover, footer, dark mode)
+$color-primary-light: #E6F1E8;
+$color-secondary:     #0B8BC5;   // azul agua del logo (letra N, ondas)
+$color-secondary-light: #E1F1F9;
+$color-accent:        #6FA828;   // verde hoja/montaña del logo (acentos vivos)
 $color-white:         #FFFFFF;
 $color-light:         #F7F9F8;
 $color-gray-100:      #F1F3F2;

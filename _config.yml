@@ -36,10 +36,10 @@ company:
 # Tema / colores (se inyectan también como CSS variables, ver _sass/_variables.scss)
 # --------------------------------------------------------------------------
 theme:
-  color_primary: "#1E5F4E"      # verde naturaleza
-  color_primary_dark: "#153F34"
-  color_secondary: "#2E86AB"    # azul agua
-  color_accent: "#B08968"       # tono tierra
+  color_primary: "#0F6A2F"      # verde del logo (letras S/B, texto)
+  color_primary_dark: "#0B4D22"
+  color_secondary: "#0B8BC5"    # azul agua del logo (letra N, ondas)
+  color_accent: "#6FA828"       # verde hoja/montaña del logo (acentos)
   color_light: "#F7F9F8"
   color_gray: "#6B7280"
 
