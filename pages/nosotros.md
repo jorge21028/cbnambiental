@@ -5,24 +5,31 @@ permalink: /nosotros/
 description: "Historia, misión, visión, valores y equipo de SBN Ambiental Consulting."
 ---
 
-## Nuestra historia
+## ¿Quiénes somos?
 
-SBN Ambiental Consulting nace con el propósito de acompañar a empresas e instituciones en la construcción de un desarrollo compatible con el entorno natural. A lo largo de los años hemos consolidado un equipo multidisciplinario capaz de resolver desafíos ambientales complejos con soluciones técnicas y sostenibles.
+Somos un equipo multidisciplinario comprometido con el diseño, planificación, supervisión y ejecución de proyectos ambientales para los sectores público, privado e industrial. Acompañamos a nuestros clientes desde la concepción de una idea hasta la implementación y evaluación de soluciones de alto impacto.
 
 ## Misión
 
-Brindar soluciones ambientales integrales basadas en ciencia, ingeniería e innovación, que permitan a nuestros clientes operar de manera responsable y sostenible.
+Brindar soluciones integrales de consultoría ambiental mediante el diseño, planificación, construcción, supervisión y evaluación de proyectos sostenibles, con énfasis en agua, tratamiento de aguas residuales, Soluciones Basadas en la Naturaleza, gestión ambiental y HSE, contribuyendo al desarrollo sostenible y al bienestar de las comunidades.
 
 ## Visión
 
-Ser la consultora ambiental de referencia en la región, reconocida por su rigor técnico, ética profesional y compromiso con la sostenibilidad.
+Ser una empresa líder en consultoría e ingeniería ambiental en la República Dominicana y el Caribe, reconocida por su excelencia técnica, innovación y compromiso con la sostenibilidad.
 
 ## Valores
 
-- **Integridad** — actuamos con transparencia en cada proyecto.
-- **Excelencia técnica** — aplicamos los más altos estándares científicos.
-- **Sostenibilidad** — priorizamos el equilibrio entre desarrollo y naturaleza.
-- **Colaboración** — trabajamos de la mano con nuestros clientes y comunidades.
+- **Integridad** 
+- **Excelencia técnica** 
+- **Sostenibilidad** 
+- **Colaboración**
+- **Sostenibilidad** 
+- **Responsabilidad** 
+- **Trabajo en equipo** 
+- **Orientación al cliente** 
+- **Seguridad** 
+- **Respeto por el medio ambiente** 
+- **Mejora continua** 
 
 ## Compromiso ambiental
 
