@@ -1,8 +1,10 @@
 hero:
   headline: "Ingeniería ambiental con impacto real"
   subheadline: >-
-    Acompañamos a empresas e instituciones en el diseño de soluciones
-    ambientales sostenibles, respaldadas por ciencia y experiencia técnica.
+    Desarrollamos soluciones innovadoras para el manejo sostenible del agua,
+    el tratamiento de aguas residuales, la gestión ambiental y la
+    conservación de los recursos naturales, integrando Soluciones Basadas
+    en la Naturaleza (SbN), innovación y excelencia técnica.
   image: "/assets/images/hero/hero-main.jpg"
   cta_primary_text: "Solicitar asesoría"
   cta_primary_url: "/contacto/"

@@ -2,7 +2,7 @@
 layout: page
 title: Nosotros
 permalink: /nosotros/
-description: "Historia, misión, visión, valores y equipo de SBN Ambiental Consulting."
+description: "Quiénes somos, misión, visión, valores y equipo de SBN Ambiental Consulting."
 ---
 
 ## ¿Quiénes somos?
@@ -19,17 +19,16 @@ Ser una empresa líder en consultoría e ingeniería ambiental en la República 
 
 ## Valores
 
-- **Integridad** 
-- **Excelencia técnica** 
-- **Sostenibilidad** 
-- **Colaboración**
-- **Sostenibilidad** 
-- **Responsabilidad** 
-- **Trabajo en equipo** 
-- **Orientación al cliente** 
-- **Seguridad** 
-- **Respeto por el medio ambiente** 
-- **Mejora continua** 
+- Integridad
+- Excelencia técnica
+- Innovación
+- Sostenibilidad
+- Responsabilidad
+- Trabajo en equipo
+- Orientación al cliente
+- Seguridad
+- Respeto por el medio ambiente
+- Mejora continua
 
 ## Compromiso ambiental
 

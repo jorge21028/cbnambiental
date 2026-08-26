@@ -21,14 +21,14 @@ main:
     url: "/contacto/"
 
 footer_services:
+  - title: "Consultoría ambiental"
+    url: "/servicios/consultoria-ambiental/"
+  - title: "Soluciones Basadas en la Naturaleza"
+    url: "/servicios/soluciones-basadas-naturaleza/"
   - title: "Monitoreo de calidad de agua"
     url: "/servicios/monitoreo-calidad-agua/"
-  - title: "Estudios ambientales"
-    url: "/servicios/estudios-ambientales/"
-  - title: "Gestión de autorizaciones"
-    url: "/servicios/"
-  - title: "Consultoría ambiental"
-    url: "/servicios/"
+  - title: "Recursos hídricos y saneamiento"
+    url: "/servicios/recursos-hidricos-saneamiento/"
 
 footer_company:
   - title: "Nosotros"

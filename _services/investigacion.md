@@ -1,6 +1,6 @@
 ---
-title: "Investigación"
-summary: "Proyectos de investigación aplicada en temas ambientales y de sostenibilidad."
+title: "Investigación e ingeniería ambiental"
+summary: "Proyectos de investigación aplicada e ingeniería ambiental para temas ambientales y de sostenibilidad."
 image: "/assets/images/services/investigacion.jpg"
 order: 3
 benefits:
@@ -17,4 +17,4 @@ faq:
     answer: "Completa el formulario de contacto en esta página y un especialista te contactará en menos de 48 horas."
 ---
 
-Proyectos de investigación aplicada en temas ambientales y de sostenibilidad. Nuestro equipo multidisciplinario acompaña cada etapa del proceso, garantizando resultados técnicos confiables y alineados con la normativa vigente.
+Proyectos de investigación aplicada e ingeniería ambiental para temas ambientales y de sostenibilidad. Nuestro equipo multidisciplinario acompaña cada etapa del proceso, garantizando resultados técnicos confiables y alineados con la normativa vigente.
