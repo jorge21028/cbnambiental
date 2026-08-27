@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Gestión de autorizaciones ambientales"
 summary: "Acompañamiento integral en trámites y permisos ambientales ante las autoridades competentes."
 image: "/assets/images/services/gestion-autorizaciones-ambientales.jpg"
