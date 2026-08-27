@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Planta de tratamiento de aguas residuales — Zona Industrial"
 client: "Grupo Industrial del Caribe"
 location: "Santo Domingo Este"
