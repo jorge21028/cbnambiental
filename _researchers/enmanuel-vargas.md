@@ -1,16 +1,24 @@
 ---
 name: Ing. Enmanuel Vargas
 profession: Ingeniero Agroforestal
-specialty: Calidad de agua y ecotoxicología
-image: https://plus.unsplash.com/premium_photo-1739786996040-32bde1db0610?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-email: maria.fernandez@sbnambiental.com
+specialty: Especialista en Agua y Saneamiento 
+image: assets/images/team/enmanuelvargas.JPG
+email: enmanuelvs0417@gmail.com
 linkedin: https://linkedin.com/in/
 experience:
-  - 12 años de experiencia en monitoreo ambiental
-  - Investigadora principal en 8 proyectos de I+D
+  - 2013 – Jarabacoa, R.D.Técnico en Medio Ambiente y Recursos Naturales, Mención Gestión Ambiental. Instituto Superior de Ciencias Ambientales de la República Dominicana (ITESMARENA).
+  - 2016 – Jarabacoa, R.D Curso para Bomberos Forestales (CBF). Impartido por el Ministerio de Medio Ambiente.
+  - 2018-Quito, Ecuador. Curso Taller: Protocolo de Evaluación Visual de Corrientes de Río (SVAP). The Nature Conservancy (TNC).
+  - 2022 – Santiago de los Caballeros, R.D. Capacitación en Sistemas de Monitoreo Hidrometeorológico y Calidad de Agua para Fondos de Agua. The Nature Conservancy
+  - 2022 – Santo Domingo, R.D. Diseño, Construcción y Operación de Humedales Construidos para el Tratamiento de Aguas Residuales. Instituto Tecnológico de Santo Domingo (INTEC).
+  - 2023 – Kingston, Jamaica. Capacitación en Diseño de Cambio de Comportamiento aplicado a Sistemas de Tratamiento de Aguas Residuales. Center for Behavior and the Environment (RARE-USA).
+  - 2023 – Entrenamiento virtual Capacitación intensiva en Diseño de Cambio de Comportamiento (RARE). Incluyó principios de diseño, diversidad, equidad, inclusión, aplicación de datos y prototipado de soluciones.
+  - 2024 – Jarabacoa, R.D.Ingeniería Agronómica. Universidad Agroforestal Fernando Arturo de Meriño (UAFAM).
 publications:
-  - Impacto de efluentes industriales en cuerpos de agua tropicales (2023)
-  - Bioindicadores de calidad de agua en ríos del Caribe (2021)
+  - Octobre 2020. Artículo: Design and Assessment of a Domestic Wastewater Treatment System Based on a Constructed Wetland with Subsurface Flow in Jarabacoa, Dominican Republic. INTEC. PROCEDIA.
+  - Noviembre 2020. Hábitats acuáticos y características físico-químicas de ríos en áreas protegidas península sur de Haití. The Nature Conservancy (TNC).
+  - Agosto 2023. Efficiency and effectiveness of systems for the treatment of domestic wastewater based on subsurface flow constructed wetlands in Jarabacoa, Dominican Republic.
+  - Septiembre 2025 Libro: Los humedales construidos como solución basada en la naturaleza para el tratamiento de aguas residuales: preguntas y respuestas. Publicación conjunta con INTEC, Fondo de Agua Yaque del Norte y Plan Yaque, Inc.
 ---
 
-La Dra. Fernández lidera el área de investigación en calidad de agua de CBN Ambiental Consulting. Su trabajo se enfoca en el desarrollo de metodologías de monitoreo adaptadas a ecosistemas tropicales y en la evaluación de riesgos ecotoxicológicos asociados a actividades industriales.
+Especialista en Agua y Saneamiento con formación en Ingeniería Agronómica y Gestión Ambiental. Experiencia en diseño, construcción y evaluación de humedales construidos para el tratamiento de aguas residuales, gobernanza comunitaria con enfoque en diseño de cambio de comportamiento. Especialista en monitoreo de calidad de agua e hidrometría. Publicaciones en revistas científicas y autor de libro técnico sobre soluciones basadas en la naturaleza.
