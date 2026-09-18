@@ -8,7 +8,7 @@ linkedin: https://linkedin.com/in/
 experience:
   - 2013 – Jarabacoa, R.D.Técnico en Medio Ambiente y Recursos Naturales, Mención Gestión Ambiental. Instituto Superior de Ciencias Ambientales de la República Dominicana (ITESMARENA).
   - 2016 – Jarabacoa, R.D Curso para Bomberos Forestales (CBF). Impartido por el Ministerio de Medio Ambiente.
-  - 2018-Quito, Ecuador. Curso Taller: Protocolo de Evaluación Visual de Corrientes de Río (SVAP). The Nature Conservancy (TNC).
+  - 2018 – Quito, Ecuador. Curso Taller: Protocolo de Evaluación Visual de Corrientes de Río (SVAP). The Nature Conservancy (TNC).
   - 2022 – Santiago de los Caballeros, R.D. Capacitación en Sistemas de Monitoreo Hidrometeorológico y Calidad de Agua para Fondos de Agua. The Nature Conservancy
   - 2022 – Santo Domingo, R.D. Diseño, Construcción y Operación de Humedales Construidos para el Tratamiento de Aguas Residuales. Instituto Tecnológico de Santo Domingo (INTEC).
   - 2023 – Kingston, Jamaica. Capacitación en Diseño de Cambio de Comportamiento aplicado a Sistemas de Tratamiento de Aguas Residuales. Center for Behavior and the Environment (RARE-USA).
