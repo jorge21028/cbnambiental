@@ -1,6 +1,6 @@
 ---
 name: Ing. Enmanuel Vargas
-profession: Ingeniero Agroforestal
+profession: Ingeniero Agrónomo
 specialty: Especialista en Agua y Saneamiento 
 image: assets/images/team/enmanuelvargas.JPG
 email: enmanuelvs0417@gmail.com
