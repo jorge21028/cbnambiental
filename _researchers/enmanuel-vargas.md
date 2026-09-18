@@ -15,10 +15,10 @@ experience:
   - 2023 – Entrenamiento virtual Capacitación intensiva en Diseño de Cambio de Comportamiento (RARE). Incluyó principios de diseño, diversidad, equidad, inclusión, aplicación de datos y prototipado de soluciones.
   - 2024 – Jarabacoa, R.D.Ingeniería Agronómica. Universidad Agroforestal Fernando Arturo de Meriño (UAFAM).
 publications:
-  - Octobre 2020. Artículo: Design and Assessment of a Domestic Wastewater Treatment System Based on a Constructed Wetland with Subsurface Flow in Jarabacoa, Dominican Republic. INTEC. PROCEDIA.
+  - Octobre 2020. Artículo Design and Assessment of a Domestic Wastewater Treatment System Based on a Constructed Wetland with Subsurface Flow in Jarabacoa, Dominican Republic. INTEC. PROCEDIA.
   - Noviembre 2020. Hábitats acuáticos y características físico-químicas de ríos en áreas protegidas península sur de Haití. The Nature Conservancy (TNC).
   - Agosto 2023. Efficiency and effectiveness of systems for the treatment of domestic wastewater based on subsurface flow constructed wetlands in Jarabacoa, Dominican Republic.
-  - Septiembre 2025 Libro: Los humedales construidos como solución basada en la naturaleza para el tratamiento de aguas residuales: preguntas y respuestas. Publicación conjunta con INTEC, Fondo de Agua Yaque del Norte y Plan Yaque, Inc.
+  - Septiembre 2025 Libro Los humedales construidos como solución basada en la naturaleza para el tratamiento de aguas residuales: preguntas y respuestas. Publicación conjunta con INTEC, Fondo de Agua Yaque del Norte y Plan Yaque, Inc.
 ---
 
 Especialista en Agua y Saneamiento con formación en Ingeniería Agronómica y Gestión Ambiental. Experiencia en diseño, construcción y evaluación de humedales construidos para el tratamiento de aguas residuales, gobernanza comunitaria con enfoque en diseño de cambio de comportamiento. Especialista en monitoreo de calidad de agua e hidrometría. Publicaciones en revistas científicas y autor de libro técnico sobre soluciones basadas en la naturaleza.
